@@ -39,10 +39,10 @@ function applyFilterByName() {
 function applyFilterByCreditos() {
     var limInf = inputLimInf.value;
     var limSup = inputLimSup.value;
-    if (limInf == null || limInf == undefined) {
+    if (limInf == null || limInf == undefined || limInf == '') {
         limInf = '0';
     }
-    if (limSup == null || limSup == undefined) {
+    if (limSup == null || limSup == undefined || limSup == '') {
         limSup = '20';
     }
     var limInfNumber = parseInt(limInf);

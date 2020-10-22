@@ -56,8 +56,8 @@ function applyFilterByName() {
 function applyFilterByCreditos() {
     let limInf = inputLimInf.value;
     let limSup = inputLimSup.value;
-    if (limInf == null || limInf == undefined) { limInf = '0'; }
-    if (limSup == null || limSup == undefined) { limSup = '20'; }
+    if (limInf == null || limInf == undefined || limInf =='') { limInf = '0'; }
+    if (limSup == null || limSup == undefined || limSup =='') { limSup = '20'; }
     let limInfNumber = parseInt(limInf);
     let limSupNumber = parseInt(limSup);
     clearCoursesInTable();
